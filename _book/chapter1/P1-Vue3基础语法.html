@@ -1,0 +1,415 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>P1 Vue3基础语法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Chapter1</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="P1-Vue3基础语法.html">
+            
+                <a href="P1-Vue3基础语法.html">
+            
+                    
+                    P1 Vue3基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >P1 Vue3基础语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4E00;&#x3001;vue3&#x7B80;&#x4ECB;">&#x4E00;&#x3001;Vue3&#x7B80;&#x4ECB;</h2>
+<p>Vue (&#x8BFB;&#x97F3; /vju&#x2D0;/&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; <strong>view</strong>) &#x662F;&#x4E00;&#x5957;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x754C;&#x9762;&#x7684;<strong>&#x6E10;&#x8FDB;&#x5F0F;&#x6846;&#x67B6;</strong>&#x3002;&#x4E0E;&#x5176;&#x5B83;&#x5927;&#x578B;&#x6846;&#x67B6;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;Vue &#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x53EF;&#x4EE5;&#x81EA;&#x5E95;&#x5411;&#x4E0A;&#x9010;&#x5C42;&#x5E94;&#x7528;&#x3002;Vue &#x7684;&#x6838;&#x5FC3;&#x5E93;&#x53EA;&#x5173;&#x6CE8;&#x89C6;&#x56FE;&#x5C42;&#xFF0C;&#x4E0D;&#x4EC5;&#x6613;&#x4E8E;&#x4E0A;&#x624B;&#xFF0C;&#x8FD8;&#x4FBF;&#x4E8E;&#x4E0E;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x6216;&#x65E2;&#x6709;&#x9879;&#x76EE;&#x6574;&#x5408;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x5F53;&#x4E0E;<a href="https://v3.cn.vuejs.org/guide/single-file-component.html" target="_blank">&#x73B0;&#x4EE3;&#x5316;&#x7684;&#x5DE5;&#x5177;&#x94FE;</a>&#x4EE5;&#x53CA;&#x5404;&#x79CD;<a href="https://github.com/vuejs/awesome-vue#components--libraries" target="_blank">&#x652F;&#x6301;&#x7C7B;&#x5E93;</a>&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;Vue &#x4E5F;&#x5B8C;&#x5168;&#x80FD;&#x591F;&#x4E3A;&#x590D;&#x6742;&#x7684;&#x5355;&#x9875;&#x5E94;&#x7528;&#x63D0;&#x4F9B;&#x9A71;&#x52A8;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>1&#x3001;&#x4E00;&#x822C;&#x4E86;&#x89E3;Vue3&#x7684;&#x540C;&#x5B66;&#x90FD;&#x662F;&#x5DF2;&#x7ECF;&#x6709;Vue2&#x7684;&#x76F8;&#x5173;&#x5F00;&#x53D1;&#x4E0E;&#x5B66;&#x4E60;&#x7ECF;&#x9A8C;&#xFF0C;&#x56E0;&#x6B64;&#x672C;&#x5957;&#x6559;&#x7A0B;&#x4E2D;&#x6709;&#x90E8;&#x5206;&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7ECF;&#x61C2;&#x4E86;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x7ED5;&#x8FC7;&#x3002;&#x4E3A;&#x4E86;&#x7167;&#x987E;&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x5B66;&#x5458;&#xFF0C;&#x672C;&#x6559;&#x7A0B;&#x4F9D;&#x7136;&#x4F1A;&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x5E2E;&#x52A9;&#x5927;&#x5BB6;&#x638C;&#x63E1;Vue3&#x3002;</p>
+<p>2&#x3001;&#x6709;React&#x57FA;&#x7840;&#x7684;&#x540C;&#x5B66;&#x5B66;&#x4E60;Vue3&#x5C06;&#x4F1A;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x3002;</p>
+</blockquote>
+<h2 id="&#x4E8C;&#x3001;&#x811A;&#x624B;&#x67B6;&#x5B89;&#x88C5;&#x4E0E;&#x9879;&#x76EE;&#x521B;&#x5EFA;">&#x4E8C;&#x3001;&#x811A;&#x624B;&#x67B6;&#x5B89;&#x88C5;&#x4E0E;&#x9879;&#x76EE;&#x521B;&#x5EFA;</h2>
+<h3 id="1&#x3001;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x811A;&#x624B;&#x67B6;">1&#x3001;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x811A;&#x624B;&#x67B6;</h3>
+<p>&#x5728;&#x672C;&#x673A;&#x4E0A;&#x5168;&#x5C40;&#x5B89;&#x88C5;Vue&#x811A;&#x624B;&#x67B6;&#xFF1A;</p>
+<pre><code class="lang-shell">$ yarn global add @vue/cli
+# &#x6216;
+$ npm install -g @vue/cli
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728; Vue &#x9879;&#x76EE;&#x4E2D;&#x8FD0;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-shell">$ vue upgrade --next
+</code></pre>
+<h3 id="2&#x3001;vite&#x521B;&#x5EFA;&#x9879;&#x76EE;">2&#x3001;Vite&#x521B;&#x5EFA;&#x9879;&#x76EE;</h3>
+<p><a href="https://cn.vitejs.dev/" target="_blank">Vite</a> &#x662F;&#x4E00;&#x4E2A; web &#x5F00;&#x53D1;&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#xFF0C;&#x7531;&#x4E8E;&#x5176;&#x539F;&#x751F; ES &#x6A21;&#x5757;&#x5BFC;&#x5165;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x95EA;&#x7535;&#x822C;&#x7684;&#x51B7;&#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x3002;&#x901A;&#x8FC7;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x8FD0;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Vite &#x5FEB;&#x901F;&#x6784;&#x5EFA; Vue &#x9879;&#x76EE;&#x3002;</p>
+<p>&#x4F7F;&#x7528; npm&#xFF1A;</p>
+<pre><code class="lang-shell"># npm 6.x
+$ npm init vite@latest &lt;project-name&gt; --template vue
+
+# npm 7+&#xFF0C;&#x9700;&#x8981;&#x52A0;&#x4E0A;&#x989D;&#x5916;&#x7684;&#x53CC;&#x77ED;&#x6A2A;&#x7EBF;
+$ npm init vite@latest &lt;project-name&gt; -- --template vue
+
+$ cd &lt;project-name&gt;
+$ npm install
+$ npm run dev
+</code></pre>
+<p>&#x6216;&#x8005; yarn&#xFF1A;</p>
+<pre><code class="lang-shell">$ yarn create vite &lt;project-name&gt; --template vue
+$ cd &lt;project-name&gt;
+$ yarn
+$ yarn dev
+</code></pre>
+<h2 id="&#x4E09;&#x3001;vscode&#x6269;&#x5C55;&#x5B89;&#x88C5;">&#x4E09;&#x3001;VsCode&#x6269;&#x5C55;&#x5B89;&#x88C5;</h2>
+<p>&#x5728;&#x505A;Vue&#x811A;&#x624B;&#x67B6;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x8BED;&#x6CD5;&#x63D0;&#x793A;&#x7B49;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;VsCode&#x641C;&#x7D22;&#x5E76;&#x5B89;&#x88C5; <code>Volar</code> &#x6269;&#x5C55;&#xFF1A;</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gyrd5qttsfj31d60u0wja.jpg" alt="image-20220126204925653"></p>
+<h2 id="&#x56DB;&#x3001;&#x6570;&#x636E;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;">&#x56DB;&#x3001;&#x6570;&#x636E;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;</h2>
+<p>&#x9879;&#x76EE;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x540E;&#xFF0C;&#x5220;&#x9664; <code>HelloWorld.vue</code>&#xFF0C;&#x5E76;&#x5220;&#x9664; <code>App.vue</code> &#x4E2D;&#x5BF9;&#x5B83;&#x7684;&#x5F15;&#x7528;&#x3002;&#x5728; <code>components</code> &#x4E0B;&#x65B0;&#x5EFA; <code>Test1.vue</code>&#xFF0C;&#x6572;&#x4E0B;&#x57FA;&#x672C;&#x6A21;&#x677F;&#xFF1A;</p>
+<pre><code class="lang-vue">&lt;template&gt;
+
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+&lt;/style&gt;
+</code></pre>
+<p>&#x968F;&#x540E;&#x5728; <code>App.vue</code> &#x4E2D;&#x5F15;&#x5165;&#x5E76;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-vue">&lt;script setup&gt;
+import Test1 from &apos;./components/Test1.vue&apos;
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;Test1 /&gt;
+&lt;/template&gt;
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>1&#x3001;script&#x6807;&#x7B7E;&#x4E0A;&#x7684;setup&#x5C5E;&#x6027;&#x540E;&#x6587;&#x4F1A;&#x63D0;&#x53CA;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x5FFD;&#x7565;&#x5B83;&#xFF1B;</p>
+<p>2&#x3001;Test1&#x4E0D;&#x9700;&#x8981;&#x50CF;Vue2&#x4E00;&#x6837;&#x5728;components&#x4E0B;&#x6CE8;&#x518C;&#x540E;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;Vue3&#x5141;&#x8BB8;&#x4F60;&#x76F4;&#x63A5;&#x5F15;&#x5165;&#x5C31;&#x4F7F;&#x7528;&#xFF1B;</p>
+</blockquote>
+<h3 id="1&#x3001;&#x6A21;&#x677F;&#x8BED;&#x6CD5;">1&#x3001;&#x6A21;&#x677F;&#x8BED;&#x6CD5;</h3>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x663E;&#x793A;&#x4E00;&#x4E9B;&#x6587;&#x5B57;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x6587;&#x5B57;&#x662F;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7684;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728; <code>export default {}</code> &#x4E2D;&#x4F7F;&#x7528;data&#x51FD;&#x6570;&#x6765;&#x58F0;&#x660E;&#x5B57;&#x6BB5;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x7528; <code>{{}}</code> &#x6765;&#x663E;&#x793A;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-vue">&lt;template&gt;
+    &lt;div&gt;{{msg}}&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+    data() {
+        return {
+            msg: &quot;&#x4F60;&#x597D;&#x4E16;&#x754C;&quot;
+        }
+    }
+}
+&lt;/script&gt;
+</code></pre>
+<h3 id="2&#x3001;v-html&#x4E0E;v-text&#x6307;&#x4EE4;">2&#x3001;v-html&#x4E0E;v-text&#x6307;&#x4EE4;</h3>
+<p>&#x4EE5;&#x4E0A;&#x7684;&#x6A21;&#x677F;&#x8BED;&#x6CD5;&#x5176;&#x5B9E;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6307;&#x4EE4;&#x6765;&#x5B8C;&#x6210;&#x3002;&#x6240;&#x8C13;&#x7684;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x6682;&#x65F6;&#x7406;&#x89E3;&#x4E3A;&#x6807;&#x7B7E;&#x5C5E;&#x6027;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x4E5F;&#x662F;&#x6807;&#x7B7E;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre><code class="lang-vue">&lt;!-- &#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x7684;&#x5199;&#x6CD5;&#x6548;&#x679C;&#x4E00;&#x81F4; --&gt;
+&lt;template&gt;
+    &lt;div&gt;{{msg}}&lt;/div&gt;
+    &lt;div v-html=&quot;msg&quot;&gt;&lt;/div&gt;
+    &lt;div v-text=&quot;msg&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>template&#x4E0B;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x6839;&#x6807;&#x7B7E;&#xFF0C;&#x8FD9;&#x4E0E;Vue2&#x7A0D;&#x6709;&#x4E0D;&#x540C;&#x3002;</p>
+</blockquote>
+<p>&#x65E2;&#x7136; <code>v-html</code> &#x548C; <code>v-text</code> &#x76F8;&#x540C;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x6307;&#x4EE4;&#x5462;&#xFF1F;&#x56DE;&#x7B54;&#xFF1A;&#x4E8C;&#x8005;&#x5F53;&#x7136;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;<code>v-html</code> &#x53EF;&#x4EE5;&#x89E3;&#x6790;&#x6807;&#x7B7E;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x800C; <code>v-text</code> &#x53EA;&#x80FD;&#x5C06;&#x6807;&#x7B7E;&#x540D;&#x5B57;&#x76F4;&#x63A5;&#x4F5C;&#x4E3A;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x663E;&#x793A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-vue">&lt;template&gt;
+    &lt;div&gt;{{msg}}&lt;/div&gt;
+    &lt;div v-html=&quot;msg&quot;&gt;&lt;/div&gt;
+    &lt;div v-text=&quot;msg&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+    data() {
+        return {
+            msg: `&lt;li&gt;&#x4F60;&#x597D;&#x4E16;&#x754C;&lt;/li&gt;`
+        }
+    }
+}
+&lt;/script&gt;
+</code></pre>
+<p>&#x51FA;&#x6765;&#x7684;&#x6548;&#x679C;&#x5982;&#x56FE;&#xFF1A;</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gyrdhteoecj30ai05at8r.jpg" alt="image-20220126210107148"></p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;<code>v-text</code> &#x4E0E;&#x6A21;&#x677F;&#x8BED;&#x6CD5;&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x800C; <code>v-html</code> &#x5728;&#x89E3;&#x6790;&#x6807;&#x7B7E;&#x4E0A;&#xFF0C;&#x8FD8;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>&#x5982;&#x679C;&#x524D;&#x7AEF;&#x63A5;&#x6536;&#x4E86;&#x540E;&#x7AEF;&#x7684;&#x5BCC;&#x6587;&#x672C;&#x5185;&#x5BB9;&#xFF0C;&#x4E00;&#x822C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;v-html&#x6765;&#x6E32;&#x67D3;&#x4E86;&#x3002;</p>
+</blockquote>
+<h2 id="&#x4E94;&#x3001;&#x4E8B;&#x4EF6;">&#x4E94;&#x3001;&#x4E8B;&#x4EF6;</h2>
+<p>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x6709;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;msg&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x7ED9;&#x6309;&#x94AE;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-vue">&lt;template&gt;
+    &lt;div&gt;{{msg}}&lt;/div&gt;
+        &lt;!-- @&#x662F;v-on&#x6307;&#x4EE4;&#x7684;&#x7B80;&#x5199;&#xFF0C;&#x5B8C;&#x6574;&#x7684;&#x5199;&#x6CD5;&#x4E3A;&#xFF1A;v-on:click --&gt;
+    &lt;button @click=&quot;changeMsg&quot;&gt;&#x4FEE;&#x6539;msg&lt;/button&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+    data() {
+        return {
+            msg: `&#x4F60;&#x597D;&#x4E16;&#x754C;`
+        }
+    },
+    methods: {
+          // &#x6309;&#x94AE;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;
+        changeMsg(){
+            this.msg = &apos;Hello World&apos;
+        }
+    }
+}
+&lt;/script&gt;
+</code></pre>
+<p>&#x5B66;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x90E8;&#x5206;&#x63A5;&#x89E6;&#x8FC7;Vue2&#x7684;&#x540C;&#x5B66;&#x4F1A;&#x89C9;&#x5F97;&#x8FD9;&#x4E0E;Vue2&#x4E5F;&#x6CA1;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#x5440;&#xFF01;</p>
+<p>&#x786E;&#x5B9E;&#xFF0C;Vue3&#x672C;&#x6765;&#x4E5F;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x72EC;&#x7ACB;&#x4E8E;Vue2&#x7684;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x8981;&#x4F7F;&#x7528;Vue3&#x7684;&#x7EC4;&#x5408;&#x5F0F;Api&#x6765;&#x5B9E;&#x73B0;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x4E86;&#xFF01;</p>
+<h2 id="&#x516D;&#x3001;&#x7EC4;&#x5408;&#x5F0F;api">&#x516D;&#x3001;&#x7EC4;&#x5408;&#x5F0F;API</h2>
+<h3 id="1&#x3001;&#x4E3A;&#x4EC0;&#x4E48;&#x662F;&#x7EC4;&#x5408;&#x5F0F;api&#xFF1F;">1&#x3001;&#x4E3A;&#x4EC0;&#x4E48;&#x662F;&#x7EC4;&#x5408;&#x5F0F;API&#xFF1F;</h3>
+<p>&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4EE3;&#x7801;&#x7684;&#x788E;&#x7247;&#x5316;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x7406;&#x89E3;&#x548C;&#x7EF4;&#x62A4;&#x590D;&#x6742;&#x7EC4;&#x4EF6;&#x53D8;&#x5F97;&#x56F0;&#x96BE;&#x3002;&#x9009;&#x9879;&#x7684;&#x5206;&#x79BB;&#x63A9;&#x76D6;&#x4E86;&#x6F5C;&#x5728;&#x7684;&#x903B;&#x8F91;&#x95EE;&#x9898;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x5355;&#x4E2A;&#x903B;&#x8F91;&#x5173;&#x6CE8;&#x70B9;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4E0D;&#x65AD;&#x5730;&#x201C;&#x8DF3;&#x8F6C;&#x201D;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x7684;&#x9009;&#x9879;&#x5757;&#x3002;&#x5982;&#x679C;&#x80FD;&#x591F;&#x5C06;&#x540C;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x5173;&#x6CE8;&#x70B9;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x6536;&#x96C6;&#x5728;&#x4E00;&#x8D77;&#x4F1A;&#x66F4;&#x597D;&#x3002;&#x800C;&#x8FD9;&#x6B63;&#x662F;&#x7EC4;&#x5408;&#x5F0F; API &#x4F7F;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x505A;&#x5230;&#x7684;&#x3002;</p>
+<h3 id="2&#x3001;ref">2&#x3001;Ref</h3>
+<p>&#x5728; Vue 3.0 &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <code>ref</code> &#x51FD;&#x6570;&#x4F7F;&#x4EFB;&#x4F55;&#x54CD;&#x5E94;&#x5F0F;&#x53D8;&#x91CF;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x8D77;&#x4F5C;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-vue">&lt;script&gt;
+import { ref } from &apos;vue&apos;
+const msg = ref(&apos;&#x4F60;&#x597D;&#x4E16;&#x754C;&apos;);
+console.log(msg.value)  // &#x4F60;&#x597D;&#x4E16;&#x754C;
+&lt;/script&gt;
+</code></pre>
+<p><code>ref</code> &#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x503C;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<strong>&#x54CD;&#x5E94;&#x5F0F;&#x5F15;&#x7528;</strong>&#xFF0C;&#x5728;&#x6574;&#x4E2A;&#x7EC4;&#x5408;&#x5F0F; API &#x4E2D;&#x4F1A;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;<strong>&#x5F15;&#x7528;</strong>&#x7684;&#x6982;&#x5FF5;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>&#x5C06;&#x503C;&#x5C01;&#x88C5;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x770B;&#x4F3C;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#xFF0C;&#x4F46;&#x4E3A;&#x4E86;&#x4FDD;&#x6301; JavaScript &#x4E2D;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x884C;&#x4E3A;&#x7EDF;&#x4E00;&#xFF0C;&#x8FD9;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5728; JavaScript &#x4E2D;&#xFF0C;<code>Number</code> &#x6216; <code>String</code> &#x7B49;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x662F;&#x901A;&#x8FC7;&#x503C;&#x800C;&#x975E;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x7684;&#x3002;&#x5728;&#x4EFB;&#x4F55;&#x503C;&#x5468;&#x56F4;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5C01;&#x88C5;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x4E2D;&#x5B89;&#x5168;&#x5730;&#x4F20;&#x9012;&#x5B83;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x62C5;&#x5FC3;&#x5728;&#x67D0;&#x4E2A;&#x5730;&#x65B9;&#x5931;&#x53BB;&#x5B83;&#x7684;&#x54CD;&#x5E94;&#x6027;&#x3002;</p>
+</blockquote>
+<p><img src="https://blog.penjee.com/wp-content/uploads/2015/02/pass-by-reference-vs-pass-by-value-animation.gif" alt=""></p>
+<h3 id="3&#x3001;setup">3&#x3001;Setup</h3>
+<p>&#x7EC4;&#x5408;&#x5F0F;API&#x53EA;&#x80FD;&#x5728;Setup&#x65B9;&#x6CD5;&#x4E2D;&#x4F7F;&#x7528;&#x3002;<code>setup</code> &#x9009;&#x9879;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x6536; <code>props</code> &#x548C; <code>context</code> &#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x5C06; <code>setup</code> &#x8FD4;&#x56DE;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x90FD;&#x66B4;&#x9732;&#x7ED9;&#x7EC4;&#x4EF6;&#x7684;&#x5176;&#x4F59;&#x90E8;&#x5206; (&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x94A9;&#x5B50;&#x7B49;&#x7B49;) &#x4EE5;&#x53CA;&#x7EC4;&#x4EF6;&#x7684;&#x6A21;&#x677F;&#x3002;</p>
+<blockquote>
+<p>&#x5728; <code>setup</code> &#x4E2D;&#x4F60;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x4F7F;&#x7528; <code>this</code>&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0D;&#x4F1A;&#x627E;&#x5230;&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x3002;<code>setup</code> &#x7684;&#x8C03;&#x7528;&#x53D1;&#x751F;&#x5728; <code>data</code> &#x3001;<code>computed</code>  &#x6216; <code>methods</code> &#x88AB;&#x89E3;&#x6790;&#x4E4B;&#x524D;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x65E0;&#x6CD5;&#x5728; <code>setup</code> &#x4E2D;&#x88AB;&#x83B7;&#x53D6;&#x3002;</p>
+</blockquote>
+<p>&#x5C06; <code>Test1.vue</code> &#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x6539;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-vue">
+
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"P1 Vue3基础语法","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["summary","livereload"],"pluginsConfig":{"summary":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/P1-Vue3基础语法.md","mtime":"2022-01-26T15:46:57.889Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-26T15:52:37.472Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
